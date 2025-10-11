@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raja Ampat - Papua Barat</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="navigasi"></div>
+<script>
+    fetch('nav.html')
+        .then(r => r.text())
+        .then(d => document.getElementById('navigasi').innerHTML = d);
+</script>
+
+<section class="destinasi">
+    <h2>Raja Ampat, Papua Barat</h2>
+    <img src="img/raja_ampat.jpg" width="400">
+    <img src="img/raja_ampat2.jpg" width="400">
+    <img src="img/raja_ampat3.jpg" width="400">
+    <p>
+        Raja Ampat adalah surga bawah laut dengan ribuan spesies ikan dan karang.
+        Cocok untuk pecinta diving dan fotografi alam.
+    </p>
+</section>
+</body>
+</html>

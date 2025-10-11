@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gunung Bromo - Jawa Timur</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="navigasi"></div>
+<script>
+    fetch('nav.html')
+        .then(r => r.text())
+        .then(d => document.getElementById('navigasi').innerHTML = d);
+</script>
+
+<section class="destinasi">
+    <h2>Gunung Bromo, Jawa Timur</h2>
+    <img src="img/bromo.jpg" width="400">
+    <img src="img/bromo2.png" width="400">
+    <img src="img/bromo3.jpg" width="400">
+    <p>
+        Rasakan keindahan sunrise di puncak Bromo dan lautan pasir yang memesona.
+        Udara dingin dan kabut tipis menambah suasana magis.
+    </p>
+</section>
+</body>
+</html>
