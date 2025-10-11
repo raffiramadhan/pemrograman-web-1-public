@@ -7,7 +7,7 @@ html, body {
 body {
     font-family: "Verdana", sans-serif;
     color: #333;
-    background-color: #E8F5E9;
+    background: linear-gradient(180deg, #C8E6C9 0%, #E8F5E9 100%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -289,4 +289,5 @@ footer.footer a:hover {
 .tabel-wisata tr:hover {
     background-color: #DCEDC8;
     transition: 0.3s;
+
 }
