@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Wisata Indonesia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="navigasi"></div>
+    <script>
+        fetch('nav.html')
+            .then(r => r.text())
+            .then(d => document.getElementById('navigasi').innerHTML = d);
+    </script>
+    
+    <section class="daftar">
+        <h2>🌿 Daftar Objek Wisata Lainnya 🌿</h2>
+        <p class="deskripsi">
+            Berikut beberapa destinasi wisata populer di Indonesia yang dikenal karena keindahan alamnya.
+        </p>
+    
+        <ol class="list-wisata">
+            <li>
+                <h3>Pulau Komodo</h3>
+                <p>Terkenal dengan hewan purba Komodo dan laut birunya yang menakjubkan di Nusa Tenggara Timur.</p>
+            </li>
+            <li>
+                <h3>Danau Toba</h3>
+                <p>Danau vulkanik terbesar di dunia yang terletak di Sumatera Utara dengan Pulau Samosir di tengahnya.</p>
+            </li>
+            <li>
+                <h3>Kepulauan Derawan</h3>
+                <p>Surga menyelam di Kalimantan Timur dengan keindahan terumbu karang dan biota laut yang luar biasa.</p>
+            </li>
+            <li>
+                <h3>Puncak Jayawijaya</h3>
+                <p>Puncak tertinggi di Indonesia yang berselimut salju abadi, menjadi ikon kebanggaan Papua.</p>
+            </li>
+        </ol>
+    
+        <h3 style="margin-top: 50px;">📍 Rangkuman Lokasi Wisata di Indonesia</h3>
+    
+        <table class="tabel-wisata" border="1" cellpadding="8" cellspacing="0" align="center">
+            <tr bgcolor="#A5D6A7">
+                <th>No</th>
+                <th>Nama Wisata</th>
+                <th>Lokasi</th>
+                <th>Provinsi</th>
+            </tr>
+            <tr>    
+                <td>1</td>
+                <td>Pulau Komodo</td>
+                <td>Labuan Bajo</td>
+                <td>Nusa Tenggara Timur</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Danau Toba</td>
+                <td>Parapat</td>
+                <td>Sumatera Utara</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kepulauan Derawan</td>
+                <td>Berau</td>
+                <td>Kalimantan Timur</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Puncak Jayawijaya</td>
+                <td>Wamena</td>
+                <td>Papua Tengah</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

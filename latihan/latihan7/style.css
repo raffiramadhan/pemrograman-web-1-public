@@ -1,0 +1,292 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Verdana", sans-serif;
+    color: #333;
+    background: linear-gradient(180deg, #C8E6C9 0%, #E8F5E9 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #A5D6A7;
+    border-bottom: 4px solid #388E3C;
+}
+
+header h1 {
+    color: #004d00;
+    font-size: 36px;
+}
+
+marquee {
+    background-color: #C8E6C9;
+    color: #004d00;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* NAVIGATION */
+nav {
+    text-align: center;
+    background-color: #81C784;
+    padding: 10px;
+}
+
+nav a {
+    color: #003300;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* TABEL UTAMA */
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.judul-tabel {
+    background-color: #C8E6C9;
+}
+
+.judul-tabel h2 {
+    color: #004d00;
+}
+
+/* GAMBAR & TEKS */
+td img {
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+}
+
+td h3 {
+    color: #1B5E20;
+}
+
+td p {
+    text-align: justify;
+    padding: 5px 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+main h2 {
+    text-align: center;
+    color: #1B5E20;
+}
+
+main p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* MULTIMEDIA */
+.multimedia {
+    background-color: #E8F5E9;
+}
+
+/* LIST */
+.list-section {
+    background-color: #F1F8E9;
+}
+
+.list-section h3 {
+    color: #004d00;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #A5D6A7;
+    color: #004d00;
+    text-align: center;       
+    padding: 15px 0;           
+    font-size: 14px;
+    border-top: 3px solid #388E3C;
+    width: 100%;               
+    margin-top: 30px;
+}
+
+footer.footer {
+    width: 100%;
+    background-color: #A5D6A7;
+    color: #004d00;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    border-top: 3px solid #388E3C;
+    margin-top: 40px;
+}
+
+footer.footer a {
+    color: #003300;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer a {
+    color: #003300;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* HALAMAN LAIN */
+.destinasi, .daftar, .kontak {
+    text-align: center;
+    padding: 30px;
+}
+
+.destinasi img {
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+}
+
+.home-gallery {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%; 
+}
+
+.home-gallery img {
+    width: 380px;         
+    height: 250px;        
+    border-radius: 12px;
+    border: 3px solid #4CAF50;
+    object-fit: cover;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(0, 100, 0, 0.3);
+}
+
+/* ==== DAFTAR WISATA MENGGUNAKAN LIST ==== */
+.daftar {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #E8F5E9;
+}
+
+.daftar h2 {
+    color: #1B5E20;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.daftar .deskripsi {
+    color: #33691E;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Gaya untuk list */
+.list-wisata {
+    list-style-type: upper-alpha; 
+    counter-reset: list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Setiap item list */
+.list-wisata li {
+    background-color: #FFFFFF;
+    border: 2px solid #A5D6A7;
+    border-radius: 12px;
+    width: 280px;
+    padding: 20px;
+    text-align: left;
+    list-style-position: inside; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.list-wisata li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 100, 0, 0.3);
+}
+
+.list-wisata h3 {
+    color: #2E7D32;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.list-wisata p {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.tabel-wisata {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
+
+.tabel-wisata th {
+    background-color: #A5D6A7;
+    color: #1B5E20;
+    font-weight: bold;
+}
+
+.tabel-wisata td, 
+.tabel-wisata th {
+    border: 1px solid #C8E6C9;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabel-wisata tr:nth-child(even) {
+    background-color: #F1F8E9;
+}
+
+.tabel-wisata tr:hover {
+    background-color: #DCEDC8;
+    transition: 0.3s;
+}

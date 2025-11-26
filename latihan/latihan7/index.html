@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wisata Indonesia - Keindahan Alam Nusantara</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<header>
+    <h1>WISATA NUSANTARA</h1>
+    <marquee behavior="alternate">Selamat Datang di Website Promosi Wisata Alam Indonesia</marquee>
+</header>
+
+<!-- NAVIGASI EKSTERNAL -->
+<div id="navigasi"></div>
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navigasi').innerHTML = data);
+</script>
+
+<main>
+    <center>
+        <h2>Eksplorasi 3 Destinasi Wisata Terbaik di Indonesia</h2>
+        <p>Temukan keindahan pantai, gunung, dan laut dari Sabang sampai Merauke!</p>
+    </center>
+
+    <div class="home-gallery">
+        <a href="bali.html"><img src="img/kuta.jpg" alt="Bali"></a>
+        <a href="bromo.html"><img src="img/bromo.jpg" alt="Bromo"></a>
+        <a href="rajaampat.html"><img src="img/raja_ampat.jpg" alt="Raja Ampat"></a>
+    </div>
+</main>
+
+<footer class="footer">
+    <h3>Hubungi Kami</h3>
+    <p>
+        <a href="mailto:info@wisatanusantara.id">Kirim Email</a> |
+        <a href="https://www.indonesia.travel/id/id" target="_blank">Situs Resmi Indonesia.travel</a>
+    </p>
+    <p><sup>&copy;</sup> 2025 Wisata Nusantara <sup>&reg;</sup> <sub>By Raffi Ramadhan</sub></p>
+</footer>
+
+</body>
+</html>

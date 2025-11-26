@@ -1,0 +1,26 @@
+body {
+    margin: 20px;
+    background-color: #fdfdfd;
+    color: #000;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+hr.blue-line {
+    border: none;
+    height: 4px;
+    background-color: #0000cc;
+    width: 40%;
+    margin: 0 0 15px 0;
+}
+
+a {
+    color: #0000cc;
+    text-decoration: underline;
+}
+
+.note {
+    font-size: 14px;
+}

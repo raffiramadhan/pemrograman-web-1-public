@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Pembuatan Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: purple;
+            text-align: center;
+        }
+
+        table {
+            border-spacing: 5px;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Free Registration</h1>
+        <table>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" id="nama" name="nama" size="25"></td>
+            </tr>
+            <tr>
+                <td><label for="tgl">Tgl Lahir</label></td>
+                <td>:</td>
+                <td><input type="date" id="tgl" name="tgl"></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td>:</td>
+                <td><textarea id="alamat" name="alamat" rows="3" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="kota">Kota</label></td>
+                <td>:</td>
+                <td><input type="text" id="kota" name="kota" size="25"></td>
+            </tr>
+            <tr>
+                <td><label for="pekerjaan">Pekerjaan</label></td>
+                <td>:</td>
+                <td>
+                    <select name="pekerjaan" id="pekerjaan">
+                        <option value="Tani">Tani</option>
+                        <option value="Pegawai">Pegawai</option>
+                        <option value="Buruh">Buruh</option>
+                        <option value="Wirausaha">Wirausaha</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jkel" value="Pria"> Laki-laki
+                    <input type="radio" name="jkel" value="Wanita"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="hoby" value="Reading"> Reading<br>
+                    <input type="checkbox" name="hoby" value="Sport"> Sport<br>
+                    <input type="checkbox" name="hoby" value="Singing"> Singing<br>
+                    <input type="checkbox" name="hoby" value="Traveling"> Traveling
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

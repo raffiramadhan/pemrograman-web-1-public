@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pantai Kuta - Bali</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="navigasi"></div>
+<script>
+    fetch('nav.html')
+        .then(r => r.text())
+        .then(d => document.getElementById('navigasi').innerHTML = d);
+</script>
+
+<section class="destinasi">
+    <h2>Pantai Kuta, Bali</h2>
+    <img src="img/kuta.jpg" width="400">
+    <img src="img/kuta2.jpg" width="400">
+    <img src="img/kuta3.jpg" width="400">
+    <p>
+        Pantai Kuta terkenal dengan pasir putih, ombak untuk surfing, dan sunset romantis.
+        Cocok untuk wisata keluarga dan wisatawan internasional.
+    </p>
+</section>
+</body>
+</html>
