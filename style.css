@@ -512,9 +512,10 @@ footer {
 
 /* keadaan terbuka: ditambahkan class .open oleh JS */
 .lesson.open .submenu {
-    max-height: 400px;  /* cukup tinggi untuk 3 item; sesuaikan jika submenunya lebih banyak */
+    max-height: 1000px;
     opacity: 1;
     visibility: visible;
+    transition: max-height 0.6s ease, opacity 0.4s ease;
 }
 
 /* rotasi panah saat terbuka */
@@ -609,4 +610,5 @@ footer {
     margin: 3px 0 0 0;
     color: #555;
     font-size: 0.95em;
+
 }
